@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#scoreBox{
+    position: absolute;
+    font-size: 7vmin;
+    top: 9px;
+    left: 10px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(44, 44, 255);
+
+   
+}
+#highScoreBox{
+    position: absolute;
+    font-size: 7vmin;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    color: rgb(255, 42, 148);
+}
+#board{
+    background: linear-gradient(rgb(40, 255, 40),rgb(253, 253, 173));
+    height: 70vmin;
+    width: 70vmin;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(18,1fr);
+    grid-template-rows: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(rgb(209, 153, 153),rgb(253, 253, 211));
+    border:0.25vmin solid purple;
+    border-radius: 1vmin;
+    transform: scale(1.05);
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 2vmin;
+}
+.food{
+    background:linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 1.3vmin;
+}
+.container{
+    height: 20vmin;
+    width: 20vmin;
+    display: none;
+    background-color: rgb(221, 56, 56);
+    border-radius: 12px;
+}
+.upar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(270deg);
+}
+.mdar{
+    display: flex;
+    justify-content: space-around;
+     align-items: center;
+
+   
+}
+/* .left{
+   left: 0px;
+}
+.right{
+  right: 0px;
+} */
+.dnar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+
+
+}
+.btn{
+    height: 33px;
+   width: 37px;
+    background-color: rgb(101, 219, 255);
+    font-size: 29px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+@media (max-width: 1250px) {
+   .container{
+    display:grid;
+   }
+   .body{
+    /* display: block; */
+    justify-content:none;
+    /* align-items:center; */
+    
+   }
+   .container{
+    height: 30vmin;
+    width: 30vmin;
+   }}
