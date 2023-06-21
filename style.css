@@ -107,12 +107,17 @@
     display:grid;
    }
    .body{
+    justify-content: space-evenly;
     /* display: block; */
-    justify-content:none;
+   flex-direction: column;
     /* align-items:center; */
     
    }
    .container{
-    height: 30vmin;
-    width: 30vmin;
-   }}
+    height: 50vmin;
+    width: 50vmin;
+   }
+#board{
+    height: 80vmin;
+    width: 80vmin;
+}}
