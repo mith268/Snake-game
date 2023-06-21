@@ -92,8 +92,8 @@
 
 }
 .btn{
-    height: 33px;
-   width: 37px;
+    height: 12vmin;
+   width: 12vmin;
     background-color: rgb(101, 219, 255);
     font-size: 29px;
     display: flex;
@@ -120,4 +120,6 @@
 #board{
     height: 80vmin;
     width: 80vmin;
-}}
+}
+
+}
